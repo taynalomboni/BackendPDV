@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Date;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -26,4 +27,7 @@ public class Product {
 
     @Column(nullable = false)
     private int quantity;
+
+    @Column(nullable = false)
+    private Date data;
 }
